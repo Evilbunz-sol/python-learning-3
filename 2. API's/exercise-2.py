@@ -1,7 +1,9 @@
 import requests
 import json
 
-url = "https://graph.facebook.com/v13.0/105360698771730?fields=link%2Cimages&access_token=EAAJIitQMcZBABAEZBMY7shwy9brRQzgC3WmRdST9b4oXy0t24LSZC0KEaVCvVQ4PmQwtrx0tUsv64dg5gT4FEN5UCfZAaJwSDLrqdXAjyZAJKCNHsomPBBKgtVQDdWnr301GumkMi266I3xIzPKJTcbr2ybMiwGVE9pMyZAWVyuYaKgKFegmwKtvd0geqijSCYlfgSZCrP17BnHUek8BslsJqqQ5ygMQLHLMK4HDScV1dn1jdCUBxq2ZBmkfLZB8u6HsZD"
+facebook_token = "test"
+
+url = f"https://graph.facebook.com/v13.0/105360698771730?fields=link%2Cimages&access_token={facebook_token}"
 
 response = requests.get(url)
 data = response.text
